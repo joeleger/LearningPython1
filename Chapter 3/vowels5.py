@@ -7,3 +7,4 @@ for letter in word:
         found[letter] += 1
 for k, v in sorted(found.items()):
     print(k, 'was found', v, 'time(s)')
+,
