@@ -19,7 +19,7 @@ def log_request(req: 'flask_request', res: str) -> None:
             values
             (%s, %s, %s, %s, %s)"""
     cursor.execute(_SQL, (req.form['phrase'],
-                          req.form['letters'],
+                          req.form[r'letters'],
                           req.remote_addr,
                           req.user_agent.browser,
                           res,))
