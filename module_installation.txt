@@ -1,0 +1,6 @@
+creating a module pkg
+py -3 setup.py sdist --format=zip
+
+installing
+py -3 -m pip install url_utils-1.0.zip
+the modules file name is the value to use here located in the dist folder
